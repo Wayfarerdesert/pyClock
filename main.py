@@ -19,16 +19,16 @@ window = Tk()
 window.title("Simple Clock")
 window.resizable(False, False)
 # Set window size
-window.geometry("400x200")
+window.geometry("400x250")
 
-time_label = Label(window, font=("Arial", 50), fg="#00FF00", bg="black")
-time_label.pack(fill="x") # Make the time label occupy the whole width
+time_label = Label(window, font=("Courier", 50), fg="#00FF00", bg="black", height=2)
+time_label.pack(fill="x")  # Make the time label occupy the whole width
 
-day_label = Label(window, font=("Arial", 25))
-day_label.pack(side='bottom', anchor='center')
+date_label = Label(window, font=("Courier", 25))
+date_label.pack(side="bottom", anchor="center")
 
-date_label = Label(window, font=("Arial", 25))
-date_label.pack(side='bottom', anchor='center')
+day_label = Label(window, font=("Courier", 25))
+day_label.pack(side="bottom", anchor="center")
 
 update()
 
